@@ -1,7 +1,7 @@
 let info = document.getElementById('info');
 let cursos = document.getElementById('cursos');
 let carreras = document.getElementById('carreras');
-let estadistica = document.getElementById('estadistica');
+let footer = document.getElementById('footer');
 
 let nombre = document.getElementById('nombre');
 let avatar = document.getElementById('avatar');
@@ -11,7 +11,7 @@ let totalPuntos = document.getElementById('totalPuntos');
 let biografia = document.getElementById('biografia');
 let pagina = document.getElementById('pagina');
 
-
+let miError;
 
 const consultarDatos = async () => {
 
@@ -19,7 +19,8 @@ const consultarDatos = async () => {
   let usuario = txtUsername.value;
   fetchData(`${API}${usuario}`)
   .then(response => llenarDatos(response))
-  .catch(error => console.log(error));
+  .catch(error => swal('Error:', 'Hubo un problema al consultar la API', 'error'));
+
 }
 
 const btnBuscar = document.getElementById('btnBuscar');
@@ -42,7 +43,7 @@ const llenarDatos = (datos) => {
     info.classList.add('hide');
     cursos.classList.add('hide');
     carreras.classList.add('hide');
-    estadistica.classList.add('hide');
+    footer.classList.add('hide');
     // alert('El usuario no existe!');
     swal('Atención!', "Este usuario no existe :(", 'error')
     // limpiarDatos();
@@ -50,7 +51,7 @@ const llenarDatos = (datos) => {
     info.classList.remove('hide');
     cursos.classList.remove('hide');
     carreras.classList.remove('hide');
-    estadistica.classList.remove('hide');
+    footer.classList.remove('hide');
     llenarInfo(datos.userData);
     llenarCursos(datos.userData.courses);
     llenarCarreras(datos.userData.careers);

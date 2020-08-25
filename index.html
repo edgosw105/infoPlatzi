@@ -11,15 +11,15 @@
     <section class="container">
       <section class="cabecera">
         <h1>Busca información de tu Perfil en Platzi</h1>
-        <label for="txtUsername">Escribe tu username</label>
+        <label for="txtUsername">Escribe tu username (Sin El @)</label>
         <input type="text" id="txtUsername" placeholder="Ingresa tu username" value="">
         <button type="button" id="btnBuscar"></button>
       </section>
       <section id="info" class="info hide">
+        <figure class="avatar">
+          <img id='avatar' src="" alt="avatar">
+        </figure>
         <section class="personal">
-          <figure class="avatar">
-            <img id='avatar' src="" alt="avatar">
-          </figure>
           <div class="divNombre">
             <h2 id='nombre'>nombre</h2>
             <figure>
@@ -38,26 +38,26 @@
           </div>
 
         </section>
+        <section id="estadistica" class="estadistica">
+          <div class="puntos">
+            <div id="totalPuntos" class="totalPuntos">0
+            </div>
+            <div class="spanPuntos">
+              <span>Puntos</span>
+            </div>
+          </div>
+          <div class="Respuestas">
+            <div id="totalRespuestas" class="totalRespuestas">
+              0
+            </div>
+            <div class="spanRespuestas">
+              <span>Respuestas</span>
+            </div>
+          </div>
 
+        </section>
       </section>
-      <section id="estadistica" class="estadistica hide">
-        <div class="puntos">
-          <div id="totalPuntos" class="totalPuntos">0
-          </div>
-          <div class="spanPuntos">
-            <span>Puntos</span>
-          </div>
-        </div>
-        <div class="Respuestas">
-          <div id="totalRespuestas" class="totalRespuestas">
-            0
-          </div>
-          <div class="spanRespuestas">
-            <span>Respuestas</span>
-          </div>
-        </div>
 
-      </section>
       <section id="cursos" class="cursos hide">
         <h2 id="tituloCursos">Cursos</h2>
         <div id="allCursos">
@@ -72,6 +72,7 @@
         </div>
       </section>
     </section>
+    <footer id="footer" class="footer hide">Hecho Por <a href="https://github.com/edgosw105">Edgar Oswaldo</a></footer>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/fetchData.js" charset="utf-8"></script>
     <script src="js/funciones.js" charset="utf-8"></script>
