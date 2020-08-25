@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <title>info-Platzi</title>
+  </head>
+  <body>
+    <section class="container">
+      <section class="cabecera">
+        <h1>Busca información de tu Perfil en Platzi</h1>
+        <label for="txtUsername">Escribe tu username</label>
+        <input type="text" id="txtUsername" placeholder="Ingresa tu username" value="">
+        <button type="button" id="btnBuscar"></button>
+      </section>
+      <section id="info" class="info hide">
+        <section class="personal">
+          <figure class="avatar">
+            <img id='avatar' src="" alt="avatar">
+          </figure>
+          <div class="divNombre">
+            <h2 id='nombre'>nombre</h2>
+            <figure>
+              <img id="bandera" src="" alt="flag">
+            </figure>
+          </div>
+          <div class="biografia">
+            <p id="biografia">biografia</p>
+          </div>
+          <div class="redes">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+
+            <a id="pagina" href="#">Pagina web</a>
+          </div>
+
+        </section>
+
+      </section>
+      <section id="estadistica" class="estadistica hide">
+        <div class="puntos">
+          <div id="totalPuntos" class="totalPuntos">0
+          </div>
+          <div class="spanPuntos">
+            <span>Puntos</span>
+          </div>
+        </div>
+        <div class="Respuestas">
+          <div id="totalRespuestas" class="totalRespuestas">
+            0
+          </div>
+          <div class="spanRespuestas">
+            <span>Respuestas</span>
+          </div>
+        </div>
+
+      </section>
+      <section id="cursos" class="cursos hide">
+        <h2 id="tituloCursos">Cursos</h2>
+        <div id="allCursos">
+
+        </div>
+
+      </section>
+      <section id="carreras"  class="carreras hide">
+        <h2 id='tituloCarreras'>Carreras</h2>
+        <div id="allCarreras">
+
+        </div>
+      </section>
+    </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/fetchData.js" charset="utf-8"></script>
+    <script src="js/funciones.js" charset="utf-8"></script>
+  </body>
+</html>

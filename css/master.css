@@ -1,0 +1,197 @@
+body{
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, auto);
+  justify-self: center
+}
+
+/* ===== Section Cabecera ===== */
+.cabecera{
+  display: grid;
+  width: 70%;
+  background-color: #f6f6f6;
+  justify-self: center;
+  justify-items: center;
+  padding: 5px;
+  border: 1px black solid;
+  row-gap: 15px;
+}
+
+#txtUsername{
+  height: 1.5em;
+  width: 250px;
+  border-radius: 7px;
+  /* border: 0px;  */
+}
+
+#btnBuscar{
+  background-image: url('../images/buscar.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height:20px;
+  width: 20px;
+  border: none;
+  background-color: inherit;
+  padding: 0px;
+}
+
+/* ===== Section Informacion ===== */
+
+.info{
+  display: grid;
+  grid-template-columns: 2.5fr  1.5fr;
+  column-gap: 20px;
+  background-color: #F6F6F6;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+.personal{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, auto);
+  column-gap: 20px;
+}
+
+.avatar{
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#bandera{
+  height: 18px;
+  margin
+}
+
+#avatar{
+  height: 128px;
+  width: 128px;
+  border-radius: 100px;
+}
+
+.divNombre h2{
+  display: inline;
+}
+
+.divNombre figure{
+  display: inline-block;
+  margin: 0;
+}
+
+.redes figure{
+  display: inline;
+}
+
+
+.estadistica{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #FFFFFF;
+  justify-items: center;
+  align-self: center;
+  margin-right: 20px;
+  padding: 30px;
+}
+
+.estadistica div:nth-of-type(1){
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.estadistica div:nth-of-type(2){
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+
+/* ======= Sectiom cursos ====== */
+
+.divCurso{
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 30px 30px;
+  border-top: 1px solid #f6f6f6;
+  padding: 15px;
+}
+
+.divCurso figure:nth-of-type(1){
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  height: 60px;
+  margin: 0;
+}
+
+.divCurso figure:nth-of-type(1) img{
+  height: 100%;
+}
+
+.divCurso p{
+  margin: auto 0;
+}
+
+.divCurso p:nth-of-type(1){
+  font-size: 20px;
+}
+
+.divCurso p:nth-of-type(2){
+  color: #696969;
+}
+
+/* ======= Sectiom Carreras ====== */
+
+#allCarreras{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.divCarrera{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 100px;
+  width: 200px;
+  border: 1px solid #f6f6f6;
+  justify-items: center;
+  margin: 0 10px;
+}
+
+.divCarrera p{
+  text-align: center;
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+.divCarrera figure{
+  height: 80%;
+  margin: 0;
+  padding: 16px;
+}
+
+.divCarrera figure img{
+  height: 100%;
+}
+
+/* Ocultar Clases */
+
+.hide{
+  display: none;
+}
+
+@media screen and (max-width: 700px){
+  body{
+
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+  }
+}

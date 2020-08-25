@@ -1,0 +1,18 @@
+{
+  "name": "infoplatzi",
+  "version": "1.0.0",
+  "description": "Busca tu información de perfil de platzi ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "''\u001b[Dplatzi\u001b[C\u001b[D'",
+    "''\u001b\u001b[3~\u001b[3~\u001b[3~\u001b[C\u001b[C\u001b"
+  ],
+  "author": "Edgar",
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
